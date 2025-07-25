@@ -2,6 +2,7 @@ export const SITE = {
   website: "https://blog.avgcs.com/", // replace this with your deployed domain
   author: "Zac",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  profile: "https://www.avgcs.com/",
   title: "Abandon",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
