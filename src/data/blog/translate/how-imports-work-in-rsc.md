@@ -1,6 +1,6 @@
 ---
 pubDatetime: 2025-07-25T14:33:04.170Z
-title: RSC 中的 Import 如何工作
+title: RSC 中的 import 工作原理
 featured: true
 tags:
   - React
