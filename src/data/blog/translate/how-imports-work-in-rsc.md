@@ -6,6 +6,7 @@ tags:
   - React
   - 翻译
   - RSC
+  - dan abramov
 description:
   介绍了 React Server Components（RSC）如何通过扩展模块系统（import/export）及 'use client' / 'use server' 指令，实现前端与后端代码的清晰分界与协作，同时保证模块行为直观和高可维护性。
 ---
