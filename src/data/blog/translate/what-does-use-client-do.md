@@ -7,13 +7,13 @@ tags:
   - 翻译
   - dan abramov
 description:
-  “'use client' 和 'use server' 指令本质上为模块系统开辟了安全、类型化的前后端“传送门”，让你用 import 跨越并显式表达分布式环境下的客户端与服务端逻辑分界。
+  \'use client' 和 'use server' 指令本质上为模块系统开辟了安全、类型化的前后端“传送门”，让你用 import 跨越并显式表达分布式环境下的客户端与服务端逻辑分界。
 ---
 
 ## Table of contents
 
 ## 前言
-“'use client' 和 'use server' 指令本质上为模块系统开辟了安全、类型化的前后端“传送门”，让你用 import 跨越并显式表达分布式环境下的客户端与服务端逻辑分界。[原文在这](https://overreacted.io/what-does-use-client-do/)。
+'use client' 和 'use server' 指令本质上为模块系统开辟了安全、类型化的前后端“传送门”，让你用 import 跨越并显式表达分布式环境下的客户端与服务端逻辑分界。[原文在这](https://overreacted.io/what-does-use-client-do/)。
 
 译文从这开始～～
 
