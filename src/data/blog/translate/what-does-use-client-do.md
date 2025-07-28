@@ -75,8 +75,21 @@ app.post('/api/unlike', async (req, res) => {
 
 然后你有一些前端代码去调用这些 API 路由：
 
-```
-document.getElementById('likeButton').onclick = async function() { const postId = this.dataset.postId; if (this.classList.contains('liked')) { const response = await fetch('/api/unlike', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ postId }) }); const { likes } = await response.json(); this.classList.remove('liked'); this.textContent = likes + ' Likes'; } else { const response = await fetch('/api/like', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ postId, userId }) }); const { likes } = await response.json(); this.classList.add('liked'); this.textContent = likes + ' Likes'; }}
+```js
+document.getElementById('likeButton').onclick = async function() { 
+  const postId = this.dataset.postId; 
+  if (this.classList.contains('liked')) { 
+    const response = await fetch('/api/unlike', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ postId }) }); 
+    const { likes } = await response.json(); 
+    this.classList.remove('liked'); 
+    this.textContent = likes + ' Likes'; 
+  } else { 
+    const response = await fetch('/api/like', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ postId, userId }) }); 
+    const { likes } = await response.json(); 
+    this.classList.add('liked'); 
+    this.textContent = likes + ' Likes'; 
+    }
+  }
 ```
 
 （为了简单起见，这个例子没有处理并发条件和错误。）
